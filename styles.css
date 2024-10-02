@@ -13,11 +13,16 @@ article img {
     border-radius: 15px;
 }
 
+a {
+    color: white;
+}
+
 .container {
     background-color: rgb(10, 6, 119);
-    padding: 1rem 1em;
+    padding: 2em 2em;
     border-radius: 30px;
     width: 20em;
+    margin: auto;
 }
 
 .details {
@@ -53,6 +58,17 @@ article img {
     border-radius: 50%;
 }
 
-a {
+.nftimg:hover {
+    background-color: rgba(67, 64, 64, 0.791);
     color: white;
+    transition: 0.35s;
+
+}
+
+.detailtitle:hover {
+    color: rgb(19, 247, 247);
+}
+
+a:hover {
+    color: rgb(19, 247, 247);
 }
