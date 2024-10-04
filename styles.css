@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    height: 100vh;
 }
 
 article img {
@@ -20,10 +20,9 @@ a {
 
 .container {
     background-color: rgb(6, 17, 119);
-    padding: 3em 3em;
+    padding: 1em;
     border-radius: 30px;
     width: 20em;
-    margin: 10% ;
     justify-content: center;
     
 }
@@ -35,7 +34,7 @@ a {
 
 .info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .price {
@@ -46,19 +45,11 @@ a {
 .name {
     display: flex;
     align-items: center;
-
 }
-
-.nftimg {
-    width: 100%;
-    display: block;
-    height: auto;
-}
-
 
 .name img {
     margin-right: 15px;
-    border-radius: 50%;
+    border-radius: 30px;
 }
 
 
@@ -66,3 +57,27 @@ a:hover {
     color: rgb(19, 247, 247);
 }
 
+.nftimg{
+    position: relative;
+}
+
+.overlay{
+    background: rgba(6, 17, 119, 0.453);
+    position: absolute;
+    top: 0; 
+    width: 320px;
+    height: 320px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .icon-eye{
+    font-size: 40px;
+ }
+
+ .nftimg:hover .overlay{
+        opacity: 1;
+        transition: all 0.23s ease-in-out;
+ }
